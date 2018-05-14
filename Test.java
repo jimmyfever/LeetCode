@@ -9,12 +9,11 @@ public class  Test{
 	}
 
 	public static void main(String[] args){
-
-		int[] nums = {1,2,3,4};
-
-		for(int i=0; i<nums.length;i++){
-			System.out.println(nums[i]);
-		}
+		int[] a = new int[26];
+		String s = "anagram";
+		for(int i=0; i<s.length();i++){
+		System.out.println(a[s.charAt(i)-'a']++);
+	}
 	}
 	
 }
