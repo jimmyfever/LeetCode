@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 
 
@@ -9,11 +10,11 @@ public class  Test{
 	}
 
 	public static void main(String[] args){
-		int[] a = new int[26];
-		String s = "anagram";
-		for(int i=0; i<s.length();i++){
-		System.out.println(a[s.charAt(i)-'a']++);
-	}
+		String s = "abcd";
+		int len = s.length();
+		char c = s.charAt(len-1);
+		System.out.println(c);
+
 	}
 	
 }
