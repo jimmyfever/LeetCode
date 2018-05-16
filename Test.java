@@ -10,11 +10,13 @@ public class  Test{
 	}
 
 	public static void main(String[] args){
-		String s = "abcd";
-		int len = s.length();
-		char c = s.charAt(len-1);
-		System.out.println(c);
 
+		String s = "hello world";
+		int[] hash = new int[256];
+		for(char c:s.toCharArray()){
+			hash[c]++;
+		}
+		System.out.println(Arrays.toString(hash));
 	}
 	
 }
