@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 
 
@@ -9,11 +10,8 @@ public class  Test{
 	}
 
 	public static void main(String[] args){
-		int a = 1, b = 2;
-		int tmp = b;
-		b = a;
-		a = tmp;
-		System.out.println(a +" "+b);
+		int[] nums = {1,6,3,4,5,2};
+		System.out.println(Arrays.binarySearch(nums,2));
 	}
 	
 }
