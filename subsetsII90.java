@@ -21,7 +21,7 @@ public class subsetsII90 {
 			return res;
 		}
 
-		Arrays.sort(nums);
+		Arrays.sort(nums);	//重复元素放一起
 
 		List<Integer> subset = new ArrayList<Integer>();
 		helper(nums, 0, subset, res);
@@ -30,7 +30,7 @@ public class subsetsII90 {
 	private void helper(int[] nums, int pos, List<Integer> subset, List<List<Integer>> res){
 		res.add(new ArrayList<Integer>(subset));
 		for(int i = pos; i < nums.length; i++){
-			if( i != pos && nums[i] == nums[i-1]){
+			if( i != pos && nums[i] == nums[i-1]){	//重复元素，如果第一个不取，后面也都不取
 				continue;
 			}
 			subset.add(nums[i]);
